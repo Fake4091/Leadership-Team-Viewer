@@ -16,18 +16,9 @@ Including another URLconf
 """
 
 from django.urls import path
-from app.views import (
-    home_view,
-    community_view,
-    documentation_view,
-    management_view,
-    procurement_view,
-)
+from app.views import home_view, team_view
 
 urlpatterns = [
     path("", home_view, name="home"),
-    path("community/", community_view, name="community"),
-    path("documentation/", documentation_view, name="documentation"),
-    path("management/", management_view, name="management"),
-    path("procurement/", procurement_view, name="procurement"),
+    path("<str:teamName>/", team_view, name="team"),
 ]

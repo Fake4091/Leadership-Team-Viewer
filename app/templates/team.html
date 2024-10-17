@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ team.teamName }} Team</h1>
+<p>{{ team.desc }}</p>
+<h3>Members:</h3>
+<ul>
+  {% for member in team.members %} 
+    <li>{{ member }}</li> 
+  {% endfor %}
+</ul>
+{% endblock %}

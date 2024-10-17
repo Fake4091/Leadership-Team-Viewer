@@ -1,9 +1,9 @@
 {% extends "base.html" %} {% block content %}
 <h1>Leadership Teams</h1>
 <ul>
-  <li><a href="{% url 'community' %}" class="link">Community Team</a></li>
-  <li><a href="{% url 'documentation' %}" class="link">Documentation Team</a></li>
-  <li><a href="{% url 'management' %}" class="link">Management Team</a></li>
-  <li><a href="{% url 'procurement' %}" class="link">Procurement Team</a></li>
+  <li><a href="{% url 'team' "Community" %}" class="link">Community Team</a></li>
+  <li><a href="{% url 'team' "Documentation" %}" class="link">Documentation Team</a></li>
+  <li><a href="{% url 'team' "Management" %}" class="link">Management Team</a></li>
+  <li><a href="{% url 'team' "Procurement" %}" class="link">Procurement Team</a></li>
 </ul>
 {% endblock %}

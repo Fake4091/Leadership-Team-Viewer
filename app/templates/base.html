@@ -10,6 +10,7 @@
       <h3>
         <a href="{% url 'home' %}" class="link">Leadership Team Viewer</a>
       </h3>
+      <p class="nav"><a href="{% url 'team' "community" %}" class="link">Community Team</a> | <a href="{% url 'team' "documentation" %}" class="link" >Documentation Team</a> | <a href="{% url 'team' "management" %}" class="link" >Management Team</a> | <a href="{% url 'team' "Procurement" %}" class="link">Procurement Team</a></p>
     </div>
     {% block content %} {% endblock %}
   </body>
