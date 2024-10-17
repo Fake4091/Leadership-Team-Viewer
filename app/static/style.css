@@ -1,14 +1,20 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+.body {
+  overflow-x: hidden;
 }
 
-.header a {
+.header {
+  background-color: #b7bdf8;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+
+.header .link {
   text-decoration: none;
+  color: #24273a;
 }

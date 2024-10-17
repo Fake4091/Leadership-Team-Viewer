@@ -5,9 +5,11 @@
     <title>Leadership Team Viewer</title>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
   </head>
-  <body>
+  <body class="body">
     <div class="header">
-      <h3><a href="{% url 'home' %}">Leadership Team Viewer</a></h3>
+      <h3>
+        <a href="{% url 'home' %}" class="link">Leadership Team Viewer</a>
+      </h3>
     </div>
     {% block content %} {% endblock %}
   </body>
